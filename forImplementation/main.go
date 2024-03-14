@@ -76,18 +76,3 @@ func initializeRequests() [elevio.NumFloors][elevio.NumButtons]bool {
 	}
 	return requests
 }
-
-/*
-func initializeRequests() [][]bool {
-	initializeCabCalls := checkAndLoadCabCalls()
-	requests := make([][]bool, elevio.NumFloors)
-
-	for floor := range requests {
-		requests[floor] = make([]bool, Elevio.numButtons)
-		requests[floor][0] = false
-		requests[floor][1] = false
-		requests[floor][2] = initializeCabCalls[floor]
-	}
-	return requests
-}
-*/
