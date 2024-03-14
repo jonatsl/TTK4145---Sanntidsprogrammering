@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	primary(backup())
+	go primary(backup())
 }
 
 var addr string = "localhost:8080"
